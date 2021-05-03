@@ -1,27 +1,23 @@
 import "./App.css";
+import ControlPanel from "./components/ControlPanel";
+import MasterControl from "./components/MasterControl";
 import PadsPanel from "./components/PadsPanel";
+import PerformancePanel from "./components/PerformancePanel";
+import ProgrammingPanel from "./components/ProgrammingPanel";
 
 function App() {
 
   return (
     <div className="App">
-      <section className="panel">
+      <section className="machine">
         <section className="top-panel">
           <span className="logo">SP-1200</span>
           <span className="sub-logo">SAMPLING PERCUSSION</span>
         </section>
-        <section className="control-panel">
-          Set-up/Disk/Sync/Sample
-        </section>
-        <section className="master-panel">
-          Master Control
-        </section>
-        <section className="programming-panel">
-          Programming
-        </section>
-        <section className="performance-panel">
-          Performance
-        </section>
+        <ControlPanel />
+        <MasterControl />
+        <ProgrammingPanel />
+        <PerformancePanel />
         <PadsPanel />
         <section className="bottom-panel">
           <span className="emu-logo">E-mu Systems, Inc.</span>

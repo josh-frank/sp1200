@@ -7,7 +7,7 @@ export default function PadSelect() {
     function PadGroupLED( { label } ) {
         return <section className="led-and-label">
             <div className={ activePadGroup === label ? "led-on" : "led-off" }></div>
-            <div className="led-label">{ label }</div>
+            <div className="small-label">{ label }</div>
         </section>;
     }
 
@@ -30,7 +30,7 @@ export default function PadSelect() {
     }
 
     return <>
-        <button className="pad-select-button" onClick={ toggleActivePad } />
+        <button className="white-select-button" onClick={ toggleActivePad } />
         <section className="pad-group-leds">
             <PadGroupLED label="A" />
             <PadGroupLED label="B" />

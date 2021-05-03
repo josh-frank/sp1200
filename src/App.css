@@ -1,42 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 .led-off, .led-on {
   width: 0.2rem;
   height: 0.2rem;
@@ -53,9 +14,37 @@
   box-shadow: 0rem 0rem 0.4rem 0.2rem red;
 }
 
-.panel {
+.panel-header {
+  font-family: 'Arial Narrow';
+  font-size: 1.5rem;
+  color: white;
+}
+
+.blue-rule {
+  border: 1px solid blue;
+  margin-left: 0;
+}
+
+.small-label {
+  font-family: 'Arial Narrow';
+  font-size: 0.5rem;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.machine {
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr 3fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 4fr 2fr 1fr;
   grid-template-columns: 3fr 1fr;
   width: 60rem;
   height: 40rem;
@@ -92,24 +81,42 @@
 
 .master-panel {
   display: flex;
+  flex-direction: column;
   grid-row: 2 / span 4;
   background-color: gray;
+  padding: 1rem;
+}
+
+.screen {
+  font-family: "Pixel UniCode";
+  font-size: 1.5rem;
+  width: 92.5%;
+  height: 3rem;
+  background-color: greenyellow;
+  border: 0.2rem solid greenyellow;
+  border-style: outset;
+  align-self: center;
 }
 
 .control-panel {
   display: flex;
   grid-row: 2;
   background-color: gray;
+  padding: 1rem;
 }
 
 .programming-panel {
   display: flex;
+  flex-direction: column;
+  padding: 1rem;
   grid-row: 3;
   background-color: gray;
 }
 
 .performance-panel {
   display: flex;
+  flex-direction: column;
+  padding: 1rem;
   grid-row: 4;
   background-color: gray;
 }
@@ -122,7 +129,7 @@
   background-color: gray;
 }
 
-.pad-select-button {
+.white-select-button {
   width: 2rem;
   height: 2rem;
   background-color: white;
@@ -132,7 +139,7 @@
   align-self: center;
 }
 
-.pad-select-button:active {
+.white-select-button:active {
   border-style: inset;
 }
 
@@ -146,12 +153,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.led-label {
-  font-family: 'Arial Narrow';
-  font-size: 0.5rem;
-  color: white;
 }
 
 .pad-div {
