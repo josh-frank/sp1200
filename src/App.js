@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PadsPanel from "./components/PadsPanel";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="panel">
+        <section className="top-panel">
+          <span className="logo">SP-1200</span>
+          <span className="sub-logo">SAMPLING PERCUSSION</span>
+        </section>
+        <section className="control-panel">
+          Set-up/Disk/Sync/Sample
+        </section>
+        <section className="master-panel">
+          Master Control
+        </section>
+        <section className="programming-panel">
+          Programming
+        </section>
+        <section className="performance-panel">
+          Performance
+        </section>
+        <PadsPanel />
+        <section className="bottom-panel">
+          <span className="emu-logo">E-mu Systems, Inc.</span>
+        </section>
+      </section>
     </div>
   );
+
 }
 
 export default App;
