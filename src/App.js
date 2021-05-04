@@ -1,7 +1,6 @@
 import "./App.css";
 import ControlPanel from "./components/ControlPanel";
 import MasterControl from "./components/MasterControl";
-import PadsPanel from "./components/PadsPanel";
 import PerformancePanel from "./components/PerformancePanel";
 import ProgrammingPanel from "./components/ProgrammingPanel";
 
@@ -18,7 +17,6 @@ function App() {
         <MasterControl />
         <ProgrammingPanel />
         <PerformancePanel />
-        <PadsPanel />
         <section className="bottom-panel">
           <span className="emu-logo">E-mu Systems, Inc.</span>
         </section>

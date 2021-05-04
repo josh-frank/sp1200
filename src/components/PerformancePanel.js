@@ -1,14 +1,9 @@
 import LabeledLED from "./LabeledLED";
+import Pad from "./Pad";
+import PadSelect from "./PadSelect";
+import Slider from "./Slider";
 
 export default function PerformancePanel() {
-
-    function Slider() {
-        return <input
-            className="slider"
-            type="range"
-            orient="vertical"
-        ></input>;
-    }
 
     return <section className="performance-panel">
         <span className="panel-header">
@@ -19,9 +14,7 @@ export default function PerformancePanel() {
             <button className="white-select-button" />
             <section className="labeled-leds">
                 <LabeledLED label="Tune/Decay" />
-                <br />
                 <LabeledLED label="Mix" />
-                <br />
                 <LabeledLED label="Multi Mode" />
             </section>
             <Slider />
@@ -33,6 +26,12 @@ export default function PerformancePanel() {
             <Slider />
             <Slider />
         </div>
+        <section className="pads-panel">
+            <PadSelect />
+            { [ 1, 2, 3, 4, 5, 6, 7, 8 ].map( padNumber => {
+                return <Pad key={ padNumber } padNumber={ padNumber } />
+            } ) }
+        </section>
     </section>;
 
 }

@@ -1,8 +1,5 @@
 export default function Screen( { textToDisplay } ) {
 
-    console.log( textToDisplay.slice( 0, 16 ).length );
-    console.log( textToDisplay.slice( 16, 32 ).length );
-
     return <table className="screen">
         <tbody>
             <tr>

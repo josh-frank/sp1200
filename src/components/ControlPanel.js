@@ -5,7 +5,7 @@ import SampleSection from "./SampleSection";
 
 export default function ControlPanel() {
 
-    return <section className="control-panel">
+    return <section className="control-panel space-between">
         <SetUpSection />
         <DiskSection />
         <SyncSection />

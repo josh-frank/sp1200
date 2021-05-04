@@ -46,7 +46,6 @@ ul.small-label {
 .button-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -68,10 +67,10 @@ ul.small-label {
 
 .machine {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 4fr 1fr;
   grid-template-columns: 3fr 1fr;
   width: 60rem;
-  height: 45rem;
+  height: 48rem;
   border: 20px solid black;
   border-radius: 10px;
   margin-left: auto;
@@ -109,13 +108,12 @@ ul.small-label {
   grid-row: 2;
   background-color: gray;
   padding: 1rem;
-  justify-content: space-between;
 }
 
 .master-panel {
   display: flex;
   flex-direction: column;
-  grid-row: 2 / span 4;
+  grid-row: 2 / span 3;
   background-color: gray;
   padding: 1rem;
 }
@@ -137,7 +135,6 @@ ul.small-label {
 .volume-knobs-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .number-pad {
@@ -177,20 +174,62 @@ ul.small-label {
 }
 
 .performance-controls {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat( 10, 1fr );
+  height: 8rem;
 }
 
 .slider {
-  width: 1rem;
-  -webkit-appearance: slider-vertical;
-  writing-mode: bt-lr;
+  position: relative;
+  display: inline-block;
+  height: 1rem;
+  width: 100%;
+  top: 40%;
+  -webkit-appearance: none;
+  transform: rotateZ( 270deg );
+  -moz-transform: rotate( 270deg );
+  transform-origin: center;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-track {
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 30px;
+  border: 0;
+  background: url( "assets/pot.svg" );
+  transform: rotateZ( 270deg );
+  -moz-transform: rotate( 270deg );
+  transform-origin: center;
+}
+
+.slider::-moz-range-thumb {
+  width: 60px;
+  height: 30px;
+  border: 0;
+  background: url( "assets/pot.svg" );
+  transform: rotateZ( 270deg );
+  -moz-transform: rotate( 270deg );
+  transform-origin: center;
 }
 
 .pads-panel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat( 10, 1fr );
   grid-row: 5;
   background-color: gray;
 }
@@ -257,7 +296,7 @@ ul.small-label {
 
 .bottom-panel {
   display: flex;
-  grid-row: 6;
+  grid-row: 5;
   grid-column: 1 / span 2;
   background-color: lightgray;
 }

@@ -20,13 +20,13 @@ export default function MasterControl() {
         </span>
         <div><hr className="blue-rule" /></div>
         <Screen textToDisplay={ "Seq 01   ♩=120.0Test" } />
-        <div className="button-section">
+        <div className="button-section space-between">
             <ButtonWithOneLabel label="Tempo" />
             <ButtonWithOneLabel label="◀" />
             <ButtonWithOneLabel label="▶" />
             <ButtonWithOneLabel label="Enter" />
         </div>
-        <div className="volume-knobs-section">
+        <div className="volume-knobs-section space-evenly">
             <LabeledKnob label={ "Mix\nVolume" } />
             <LabeledKnob label={ "Metronome\nVolume" } />
         </div>
