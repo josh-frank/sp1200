@@ -48,6 +48,11 @@ ul.small-label {
   padding: 1rem;
 }
 
+.button-with-label {
+  display: flex;
+  flex-direction: column;
+}
+
 .button-with-list {
   display: flex;
   flex-direction: row;
@@ -131,6 +136,15 @@ ul.small-label {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.number-pad {
+  width: 10rem;
+  align-self: center;
+}
+
+.number-pad td {
+  vertical-align: top;
 }
 
 .programming-panel {

@@ -1,6 +1,7 @@
 import Screen from "./Screen";
 import ButtonWithOneLabel from "./ButtonWithOneLabel";
 import Knob from "./Knob";
+import NumberPad from "./NumberPad";
 
 export default function MasterControl() {
 
@@ -27,6 +28,7 @@ export default function MasterControl() {
             <LabeledKnob label={ "Mix\nVolume" } />
             <LabeledKnob label={ "Metronome\nVolume" } />
         </div>
+        <NumberPad />
     </section>;
 
 }
