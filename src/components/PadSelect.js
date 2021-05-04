@@ -31,7 +31,7 @@ export default function PadSelect() {
 
     return <>
         <button className="white-select-button" onClick={ toggleActivePad } />
-        <section className="pad-group-leds">
+        <section className="labeled-leds">
             <PadGroupLED label="A" />
             <PadGroupLED label="B" />
             <PadGroupLED label="C" />

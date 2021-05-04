@@ -68,7 +68,7 @@ ul.small-label {
 
 .machine {
   display: grid;
-  grid-template-rows: 1fr 2fr 2fr 4fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 2fr 1fr;
   grid-template-columns: 3fr 1fr;
   width: 60rem;
   height: 45rem;
@@ -162,12 +162,29 @@ ul.small-label {
   background-color: gray;
 }
 
+.programming-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .performance-panel {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   grid-row: 4;
   background-color: gray;
+}
+
+.performance-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider {
+  width: 1rem;
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr;
 }
 
 .pads-panel {
@@ -206,7 +223,7 @@ ul.small-label {
   border-style: inset;
 }
 
-.pad-group-leds {
+.labeled-leds {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
