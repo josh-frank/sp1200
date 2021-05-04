@@ -8,7 +8,7 @@ export default function MasterControl() {
             <b>M</b>aster <b>C</b>ontrol
         </span>
         <div><hr className="blue-rule" /></div>
-        <Screen textToDisplay={ "Seq 01   ♩=120.0" } />
+        <Screen textToDisplay={ "Seq 01   ♩=120.0Test" } />
         <div className="button-section">
             <ButtonWithLabel label="Tempo" />
             <ButtonWithLabel label="◀" />
