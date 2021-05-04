@@ -1,7 +1,15 @@
 import Screen from "./Screen";
-import ButtonWithLabel from "./ButtonWithLabel";
+import ButtonWithOneLabel from "./ButtonWithOneLabel";
+import Knob from "./Knob";
 
 export default function MasterControl() {
+
+    function LabeledKnob( { label } ) {
+        return <div style={ { textAlign: "center" } }>
+            <Knob />
+            <div className="small-label">{ label }</div>
+        </div>;
+    }
 
     return <section className="master-panel">
         <span className="panel-header">
@@ -10,10 +18,14 @@ export default function MasterControl() {
         <div><hr className="blue-rule" /></div>
         <Screen textToDisplay={ "Seq 01   ♩=120.0Test" } />
         <div className="button-section">
-            <ButtonWithLabel label="Tempo" />
-            <ButtonWithLabel label="◀" />
-            <ButtonWithLabel label="▶" />
-            <ButtonWithLabel label="Enter" />
+            <ButtonWithOneLabel label="Tempo" />
+            <ButtonWithOneLabel label="◀" />
+            <ButtonWithOneLabel label="▶" />
+            <ButtonWithOneLabel label="Enter" />
+        </div>
+        <div className="volume-knobs-section">
+            <LabeledKnob label={ "Mix\nVolume" } />
+            <LabeledKnob label={ "Metronome\nVolume" } />
         </div>
     </section>;
 

@@ -1,3 +1,5 @@
+.space-between { justify-content: space-between; }
+
 .led-off, .led-on {
   width: 0.2rem;
   height: 0.2rem;
@@ -31,6 +33,10 @@
   color: white;
 }
 
+ul.small-label {
+  list-style-type: none;
+}
+
 .center {
   text-align: center;
 }
@@ -40,6 +46,17 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
+}
+
+.button-with-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-with-led {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .machine {
@@ -79,6 +96,15 @@
   margin-left: 0.5rem;
 }
 
+.control-panel {
+  display: flex;
+  flex-direction: row;
+  grid-row: 2;
+  background-color: gray;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
 .master-panel {
   display: flex;
   flex-direction: column;
@@ -101,11 +127,10 @@
   line-height: 2rem;
 }
 
-.control-panel {
+.volume-knobs-section {
   display: flex;
-  grid-row: 2;
-  background-color: gray;
-  padding: 1rem;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .programming-panel {
@@ -146,6 +171,20 @@
   border-style: inset;
 }
 
+.red-select-button {
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  outline: none;
+  border-width: 0.2rem;
+  border-style: outset;
+  align-self: center;
+}
+
+.red-select-button:active {
+  border-style: inset;
+}
+
 .pad-group-leds {
   display: flex;
   flex-direction: column;
@@ -176,13 +215,6 @@
 
 .pad:active {
   border-style: inset;
-}
-
-.pad-label {
-  margin: 0.2rem;
-  font-family: 'Arial Narrow';
-  font-size: 0.5rem;
-  color: white;
 }
 
 .bottom-panel {
