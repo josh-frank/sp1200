@@ -1,7 +1,9 @@
-import Screen from "./Screen";
 import ButtonWithOneLabel from "./ButtonWithOneLabel";
+import ButtonWithLED from "./ButtonWithLED";
 import Knob from "./Knob";
 import NumberPad from "./NumberPad";
+import Pad from "./Pad";
+import Screen from "./Screen";
 
 export default function MasterControl() {
 
@@ -12,7 +14,7 @@ export default function MasterControl() {
         </div>;
     }
 
-    return <section className="master-panel">
+    return <section className="master-panel space-evenly">
         <span className="panel-header">
             <b>M</b>aster <b>C</b>ontrol
         </span>
@@ -29,6 +31,21 @@ export default function MasterControl() {
             <LabeledKnob label={ "Metronome\nVolume" } />
         </div>
         <NumberPad />
+        <div><hr className="blue-rule" /></div>
+        <div className="play-buttons space-around">
+            <div style={ { textAlign: "center" } }>
+                <Pad />
+                <div className="small-label">Tap/Repeat</div>
+            </div>
+            <div style={ { textAlign: "center" } }>
+                <Pad />
+                <div className="small-label">Run/Stop</div>
+            </div>
+            <div style={ { textAlign: "center" } }>
+                <ButtonWithLED red />
+                <div className="small-label">Record/Edit</div>
+            </div>
+        </div>
     </section>;
 
 }

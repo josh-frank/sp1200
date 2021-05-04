@@ -1,4 +1,6 @@
 .space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+.space-evenly { justify-content: space-evenly; }
 
 .led-off, .led-on {
   width: 0.2rem;
@@ -69,7 +71,7 @@ ul.small-label {
   grid-template-rows: 1fr 2fr 2fr 4fr 2fr 1fr;
   grid-template-columns: 3fr 1fr;
   width: 60rem;
-  height: 40rem;
+  height: 45rem;
   border: 20px solid black;
   border-radius: 10px;
   margin-left: auto;
@@ -120,7 +122,7 @@ ul.small-label {
 
 .screen {
   font-family: "Pixel UniCode";
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 92.5%;
   background-color: greenyellow;
   border: 0.2rem solid greenyellow;
@@ -145,6 +147,11 @@ ul.small-label {
 
 .number-pad td {
   vertical-align: top;
+}
+
+.play-buttons {
+  display: flex;
+  flex-direction: row;
 }
 
 .programming-panel {
