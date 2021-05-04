@@ -89,13 +89,16 @@
 
 .screen {
   font-family: "Pixel UniCode";
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 92.5%;
-  height: 3rem;
   background-color: greenyellow;
   border: 0.2rem solid greenyellow;
   border-style: outset;
   align-self: center;
+}
+
+.screen tr {
+  line-height: 1.5rem;
 }
 
 .control-panel {
