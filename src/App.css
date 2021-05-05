@@ -179,17 +179,34 @@ ul.small-label {
   height: 8rem;
 }
 
-.slider {
+.hatch-marks {
+  grid-row: 1;
+  grid-column: 3 / span 8;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.hatch-mark {
+  width: 100%;
+  border: 1px solid white;
+}
+
+.slider-wrapper {
   position: relative;
   display: inline-block;
+  width: 30px;
+  z-index: 2;
+  top: 35%;
+  left: -50%;
+}
+
+.slider {
   background: transparent;
-  height: 1rem;
-  width: 100%;
-  top: 40%;
   -webkit-appearance: none;
-  transform: rotateZ( 270deg );
-  -moz-transform: rotate( 270deg );
   transform-origin: center;
+  transform: rotate( 270deg );
+  -moz-transform: rotate( 270deg );
   cursor: pointer;
 }
 

@@ -1,6 +1,6 @@
 export default function Knob() {
 
-    const knob = <svg
+    return <svg
         width="50px"
         height="50px"
         viewBox="0 0 100 100"
@@ -19,8 +19,6 @@ export default function Knob() {
             y2="50"
             style={ { stroke: "rgb( 255, 255, 255 )", strokeWidth: 10 } }
         />
-    </svg>
-
-    return knob;
+    </svg>;
 
 }
