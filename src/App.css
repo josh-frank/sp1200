@@ -182,6 +182,7 @@ ul.small-label {
 .slider {
   position: relative;
   display: inline-block;
+  background: transparent;
   height: 1rem;
   width: 100%;
   top: 40%;
@@ -189,6 +190,7 @@ ul.small-label {
   transform: rotateZ( 270deg );
   -moz-transform: rotate( 270deg );
   transform-origin: center;
+  cursor: pointer;
 }
 
 .slider:focus {
@@ -197,24 +199,25 @@ ul.small-label {
 
 .slider::-webkit-slider-runnable-track {
   background: black;
-  cursor: pointer;
+  height: 2px;
 }
 
 .slider::-moz-range-track {
   background: black;
-  cursor: pointer;
+  height: 2px;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 60px;
+  width: 30px;
   height: 30px;
   border: 0;
   background: url( "assets/pot.svg" );
-  transform: rotateZ( 270deg );
+  transform: rotate( 270deg );
   -moz-transform: rotate( 270deg );
   transform-origin: center;
+  margin-top: -15px;
 }
 
 .slider::-moz-range-thumb {
@@ -222,7 +225,7 @@ ul.small-label {
   height: 30px;
   border: 0;
   background: url( "assets/pot.svg" );
-  transform: rotateZ( 270deg );
+  transform: rotate( 270deg );
   -moz-transform: rotate( 270deg );
   transform-origin: center;
 }
