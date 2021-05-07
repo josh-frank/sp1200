@@ -18,6 +18,16 @@
   box-shadow: 0rem 0rem 0.4rem 0.2rem red;
 }
 
+.knob-wrapper {
+}
+
+.knob-input {
+  display: none;
+}
+
+.knob-svg {
+}
+
 .panel-header {
   font-family: 'Arial Narrow';
   font-size: 1.5rem;
@@ -203,6 +213,7 @@ ul.small-label {
 
 .slider {
   background: transparent;
+  /* width: 115px; */
   -webkit-appearance: none;
   transform-origin: center;
   transform: rotate( 270deg );
